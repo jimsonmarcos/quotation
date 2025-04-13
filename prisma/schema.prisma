@@ -1,0 +1,18 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Quotation {
+  id        Int      @id @default(autoincrement())
+  salesperson     String   @db.VarChar(255)
+  content   String?
+  status     String   @db.VarChar(16)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+
+  @@map("quotations")
+}

@@ -6,9 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --config .prettierrc.json . --write"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@prisma/client": "^6.6.0",
     "@types/nodemailer": "^6.4.17",
     "next": "15.3.0",
     "nodemailer": "^6.10.1",
@@ -23,6 +26,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
+    "prettier": "2.8.1",
+    "prisma": "^6.6.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
