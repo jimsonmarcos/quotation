@@ -25,7 +25,6 @@ export default function QuotationsTable() {
     setQuotations((prev) => [...prev, newQuotation])
   }
 
-  console.log(quotations)
 
   return (
     <>

@@ -34,7 +34,6 @@ export async function sendQuotationMail({
       html: html,
     })
 
-    console.log('Message Sent', info.messageId)
     return { success: true, messageId: info.messageId }
   } catch (error) {
     console.error('Error sending email:', error)

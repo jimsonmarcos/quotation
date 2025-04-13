@@ -8,8 +8,7 @@ export default async function Page({
 }) {
   const { id, status } = await params
 
-  const response = await updateQuotationStatus(parseInt(id), status)
-  console.log(response)
+  await updateQuotationStatus(parseInt(id), status)
 
   redirect('/')
 }
